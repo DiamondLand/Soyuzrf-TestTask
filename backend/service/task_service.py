@@ -1,3 +1,6 @@
+import httpx
+
+from loguru import logger
 from sqlalchemy.orm import Session
 from typing import List, Optional
 from fastapi.websockets import WebSocket
@@ -21,7 +24,24 @@ class WebSocketManager:
     async def send_status_update(self, task_id: int, status: str):
         for connection in self.active_connections:
             await connection.send_json({"task_id": task_id, "status": status})
+        
+        telegram_url = "https://api.telegram.org/bot{token}/sendMessage".format(token='СЮДА ТОКЕН. СВОЙ Я УДАЛИЛ')
+        text = (
+            f"<b>Задача была изменена!</b>\n\n"
+            f"📌 <b>ID задачи:</b> {task_id}\n"
+            f"📊 <b>Новый статус:</b> {status}\n\n"
+            "🔔 Проверьте детали в системе управления задачами."
+        )
+        payload = {
+            'chat_id': 872278858,
+            'text': text,
+            'parse_mode': 'HTML',
+        }
 
+        async with httpx.AsyncClient() as client:
+            response = await client.post(url=telegram_url, data=payload)
+            if response.status_code != 200:
+                logger.error(msg=f"Send log to Telegram failed with status code {response.status_code}. Error no sending: {text}")
 
 websocket_manager = WebSocketManager()
 
@@ -56,9 +76,8 @@ async def update_task_service(db: Session, user: User, task_id: int, task_data: 
     
     db.commit()
     db.refresh(task)
-    
-    if task.status != old_status:
-        await websocket_manager.send_status_update(task.id, task.status.value)
+
+    await websocket_manager.send_status_update(task.id, task.status.value)
     
     return task
 
