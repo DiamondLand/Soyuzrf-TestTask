@@ -7,9 +7,11 @@ from sqlalchemy import create_engine
 MODE: Literal["DEV", "TEST", "STABLE", "PROD"] = "DEV"
 
 APP_TITLE = "TestTask"
-APP_DESCRIPTION = "Service for SoyusRF"
+APP_DESCRIPTION = "Service for SoyuzRF"
 APP_VERSION = "1.0.0"
 APPURL = "http://127.0.0.1:9000/"
+TG_TOKEN = "7731531116:AAEmm_n-eJfxGKB1xZi82BbmhzWgGXM6yj0"
+TG_ID = 872278858
 
 # ======= DataBase Settings ======= #
 if MODE == "DEV":

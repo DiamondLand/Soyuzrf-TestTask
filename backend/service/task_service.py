@@ -7,6 +7,7 @@ from fastapi.websockets import WebSocket
 
 from utils.exception import TaskNotFoundException
 from database.models import Task, User
+from core.config import TG_ID, TG_TOKEN
 from schema.task_schema import TaskCreate, TaskUpdate
 
 
@@ -25,7 +26,7 @@ class WebSocketManager:
         for connection in self.active_connections:
             await connection.send_json({"task_id": task_id, "status": status})
         
-        telegram_url = "https://api.telegram.org/bot{token}/sendMessage".format(token='СЮДА ТОКЕН. СВОЙ Я УДАЛИЛ')
+        telegram_url = "https://api.telegram.org/bot{token}/sendMessage".format(token=TG_TOKEN)
         text = (
             f"<b>Задача была изменена!</b>\n\n"
             f"📌 <b>ID задачи:</b> {task_id}\n"
@@ -33,7 +34,7 @@ class WebSocketManager:
             "🔔 Проверьте детали в системе управления задачами."
         )
         payload = {
-            'chat_id': 872278858,
+            'chat_id': TG_ID,
             'text': text,
             'parse_mode': 'HTML',
         }
@@ -69,8 +70,7 @@ async def update_task_service(db: Session, user: User, task_id: int, task_data: 
     task = db.query(Task).filter(Task.id == task_id, Task.owner_id == user.id).first()
     if not task:
         raise TaskNotFoundException()
-    
-    old_status = task.status
+
     for key, value in task_data.dict(exclude_unset=True).items():
         setattr(task, key, value)
     

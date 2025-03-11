@@ -1999,5 +1999,176 @@
         "method": "PUT",
         "remote_addr": "127.0.0.1",
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:15:50.129970",
+        "level": "INFO",
+        "message": "Server started",
+        "module": "lifespan",
+        "funcName": "lifespan"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:15:50.131963",
+        "level": "INFO",
+        "message": "Redis started",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:15:50.132960",
+        "level": "INFO",
+        "message": "Initializing database",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:15:53.064400",
+        "level": "INFO",
+        "message": "[ET] Request: /api/v1/tasks/1, Execution Time: 0.004 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/api/v1/tasks/1",
+        "execution_time": 0.005,
+        "method": "PUT",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:16:03.347893",
+        "level": "INFO",
+        "message": "[ET] Request: /api/v1/auth/login, Execution Time: 0.2093 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/api/v1/auth/login",
+        "execution_time": 0.2103,
+        "method": "POST",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:16:04.831484",
+        "level": "INFO",
+        "message": "[ET] Request: /api/v1/tasks/1, Execution Time: 0.009 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/api/v1/tasks/1",
+        "execution_time": 0.009,
+        "method": "PUT",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:17:52.759329",
+        "level": "INFO",
+        "message": "Server started",
+        "module": "lifespan",
+        "funcName": "lifespan"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:17:52.761322",
+        "level": "INFO",
+        "message": "Redis started",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:17:52.763315",
+        "level": "INFO",
+        "message": "Initializing database",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:19:18.071495",
+        "level": "INFO",
+        "message": "Server started",
+        "module": "lifespan",
+        "funcName": "lifespan"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:19:18.073488",
+        "level": "INFO",
+        "message": "Redis started",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:19:18.075482",
+        "level": "INFO",
+        "message": "Initializing database",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:19:32.309946",
+        "level": "INFO",
+        "message": "[ET] Request: /api/v1/tasks/1, Execution Time: 3.9072 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/api/v1/tasks/1",
+        "execution_time": 3.9072,
+        "method": "PUT",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:19:46.075606",
+        "level": "INFO",
+        "message": "[ET] Request: /api/v1/tasks/1, Execution Time: 0.003 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/api/v1/tasks/1",
+        "execution_time": 0.003,
+        "method": "PUT",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:19:50.907861",
+        "level": "INFO",
+        "message": "[ET] Request: /api/v1/tasks/1, Execution Time: 0.2957 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/api/v1/tasks/1",
+        "execution_time": 0.2957,
+        "method": "PUT",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:19:53.777826",
+        "level": "INFO",
+        "message": "[ET] Request: /api/v1/tasks/1, Execution Time: 0.2984 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/api/v1/tasks/1",
+        "execution_time": 0.2984,
+        "method": "PUT",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:25:01.814146",
+        "level": "INFO",
+        "message": "[ET] Request: /redoc, Execution Time: 0.0 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/redoc",
+        "execution_time": 0.001,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 12:25:02.193840",
+        "level": "INFO",
+        "message": "[ET] Request: /openapi.json, Execution Time: 0.01 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/openapi.json",
+        "execution_time": 0.01,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
     }
 ]

@@ -13,10 +13,14 @@ class TaskCreate(BaseModel):
 
     @validator("deadline")
     def validate_deadline(cls, value):
-        if value.tzinfo is not None:
-            value = value.astimezone(timezone.utc).replace(tzinfo=None)  # Приводим к UTC без таймзоны
-        if value < datetime.now():
-            raise ValueError("Deadline cannot be in the past")
+        if value is not None:
+            if value.tzinfo is not None:
+                value = value.astimezone(timezone.utc).replace(tzinfo=None)  # Приводим к UTC без таймзоны
+            
+            today = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0)
+            if value < today:
+                raise ValueError("Deadline cannot be before today")
+        
         return value
 
 class TaskUpdate(BaseModel):
@@ -28,10 +32,14 @@ class TaskUpdate(BaseModel):
 
     @validator("deadline")
     def validate_deadline(cls, value):
-        if value.tzinfo is not None:
-            value = value.astimezone(timezone.utc).replace(tzinfo=None)  # Приводим к UTC без таймзоны
-        if value < datetime.now():
-            raise ValueError("Deadline cannot be in the past")
+        if value is not None:
+            if value.tzinfo is not None:
+                value = value.astimezone(timezone.utc).replace(tzinfo=None)  # Приводим к UTC без таймзоны
+            
+            today = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0)
+            if value < today:
+                raise ValueError("Deadline cannot be before today")
+        
         return value
 
 class TaskResponse(BaseModel):

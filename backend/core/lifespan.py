@@ -6,7 +6,6 @@ from core import config
 
 
 async def init_database():
-    logger.info("Redis started")
     logger.info("Initializing database")
     await Tortoise.init(
         db_url=config.DATABASE_URL,

@@ -1,0 +1,117 @@
+{
+    "info": {
+      "name": "Task Management API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Auth",
+        "item": [
+          {
+            "name": "Register",
+            "request": {
+              "method": "POST",
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "url": { "raw": "{{baseUrl}}/auth/register", "host": ["{{baseUrl}}"], "path": ["auth", "register"] },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"email\": \"test@example.com\",\n  \"password\": \"testpassword\"\n}"
+              }
+            }
+          },
+          {
+            "name": "Login",
+            "request": {
+              "method": "POST",
+              "header": [{ "key": "Content-Type", "value": "application/x-www-form-urlencoded" }],
+              "url": { "raw": "{{baseUrl}}/auth/login", "host": ["{{baseUrl}}"], "path": ["auth", "login"] },
+              "body": {
+                "mode": "urlencoded",
+                "urlencoded": [
+                  { "key": "username", "value": "test@example.com" },
+                  { "key": "password", "value": "testpassword" }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Tasks",
+        "item": [
+          {
+            "name": "Get Tasks",
+            "request": {
+              "method": "GET",
+              "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+              "url": { "raw": "{{baseUrl}}/tasks", "host": ["{{baseUrl}}"], "path": ["tasks"] }
+            }
+          },
+          {
+            "name": "Create Task",
+            "request": {
+              "method": "POST",
+              "header": [
+                { "key": "Authorization", "value": "Bearer {{token}}" },
+                { "key": "Content-Type", "value": "application/json" }
+              ],
+              "url": { "raw": "{{baseUrl}}/tasks", "host": ["{{baseUrl}}"], "path": ["tasks"] },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"title\": \"New Task\",\n  \"description\": \"Task description\",\n  \"deadline\": \"2025-04-01T12:00:00\",\n  \"priority\": \"medium\"\n}"
+              }
+            }
+          },
+          {
+            "name": "Update Task",
+            "request": {
+              "method": "PUT",
+              "header": [
+                { "key": "Authorization", "value": "Bearer {{token}}" },
+                { "key": "Content-Type", "value": "application/json" }
+              ],
+              "url": { "raw": "{{baseUrl}}/tasks/1", "host": ["{{baseUrl}}"], "path": ["tasks", "1"] },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"title\": \"Updated Task\",\n  \"status\": \"in_progress\"\n}"
+              }
+            }
+          },
+          {
+            "name": "Delete Task",
+            "request": {
+              "method": "DELETE",
+              "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+              "url": { "raw": "{{baseUrl}}/tasks/1", "host": ["{{baseUrl}}"], "path": ["tasks", "1"] }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Analytics",
+        "item": [
+          {
+            "name": "Get Task Statistics",
+            "request": {
+              "method": "GET",
+              "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+              "url": { "raw": "{{baseUrl}}/analytics/task-stats", "host": ["{{baseUrl}}"], "path": ["analytics", "task-stats"] }
+            }
+          },
+          {
+            "name": "Export Analytics as CSV",
+            "request": {
+              "method": "GET",
+              "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+              "url": { "raw": "{{baseUrl}}/analytics/csv", "host": ["{{baseUrl}}"], "path": ["analytics", "csv"] }
+            }
+          }
+        ]
+      }
+    ],
+    "variable": [
+      { "key": "baseUrl", "value": "http://127.0.0.1:9000" },
+      { "key": "token", "value": "" }
+    ]
+  }
+  
