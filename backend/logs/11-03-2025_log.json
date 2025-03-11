@@ -1306,5 +1306,107 @@
         "message": "Initializing database",
         "module": "lifespan",
         "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:47:24.757836",
+        "level": "INFO",
+        "message": "Server started",
+        "module": "lifespan",
+        "funcName": "lifespan"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:47:24.758833",
+        "level": "INFO",
+        "message": "Redis started",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:47:24.760825",
+        "level": "INFO",
+        "message": "Initializing database",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:47:28.707859",
+        "level": "INFO",
+        "message": "[ET] Request: /docs, Execution Time: 0.0 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/docs",
+        "execution_time": 0.001,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:47:28.802845",
+        "level": "INFO",
+        "message": "[ET] Request: /openapi.json, Execution Time: 0.007 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/openapi.json",
+        "execution_time": 0.007,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:47:37.550918",
+        "level": "INFO",
+        "message": "[ET] Request: /api/v1/auth/login, Execution Time: 0.2002 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/api/v1/auth/login",
+        "execution_time": 0.2007,
+        "method": "POST",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:47:45.924172",
+        "level": "INFO",
+        "message": "[ET] Request: /api/v1/tasks/1, Execution Time: 0.008 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/api/v1/tasks/1",
+        "execution_time": 0.009,
+        "method": "PUT",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:49:18.223062",
+        "level": "INFO",
+        "message": "Server started",
+        "module": "lifespan",
+        "funcName": "lifespan"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:49:18.225056",
+        "level": "INFO",
+        "message": "Redis started",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:49:18.227049",
+        "level": "INFO",
+        "message": "Initializing database",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:49:20.556871",
+        "level": "INFO",
+        "message": "[ET] Request: /api/v1/tasks/1, Execution Time: 0.1548 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/api/v1/tasks/1",
+        "execution_time": 0.1548,
+        "method": "PUT",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
     }
 ]

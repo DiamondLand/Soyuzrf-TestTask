@@ -36,13 +36,13 @@ def create_task(
 
 
 @router.put("/{task_id}", response_model=TaskResponse)
-def update_task(
+async def update_task(
     task_id: int, 
     task_data: TaskUpdate, 
     db: Session = Depends(get_db), 
     user: User = Depends(get_current_user)
 ):
-    return update_task_service(db=db, user=user, task_id=task_id, task_data=task_data)
+    return await update_task_service(db=db, user=user, task_id=task_id, task_data=task_data)
 
 
 @router.delete("/{task_id}")
