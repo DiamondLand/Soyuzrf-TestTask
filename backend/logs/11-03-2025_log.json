@@ -1222,5 +1222,89 @@
         "method": "GET",
         "remote_addr": "127.0.0.1",
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:36:20.807180",
+        "level": "INFO",
+        "message": "Server started",
+        "module": "lifespan",
+        "funcName": "lifespan"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:36:20.808177",
+        "level": "INFO",
+        "message": "Redis started",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:36:20.809174",
+        "level": "INFO",
+        "message": "Initializing database",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:38:44.195489",
+        "level": "INFO",
+        "message": "Server started",
+        "module": "lifespan",
+        "funcName": "lifespan"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:38:44.198480",
+        "level": "INFO",
+        "message": "Redis started",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:38:44.200472",
+        "level": "INFO",
+        "message": "Initializing database",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:41:20.828329",
+        "level": "INFO",
+        "message": "Server started",
+        "module": "lifespan",
+        "funcName": "lifespan"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:41:20.830323",
+        "level": "INFO",
+        "message": "Redis started",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:41:20.832316",
+        "level": "INFO",
+        "message": "Initializing database",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:43:00.133362",
+        "level": "INFO",
+        "message": "Server started",
+        "module": "lifespan",
+        "funcName": "lifespan"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:43:00.135355",
+        "level": "INFO",
+        "message": "Redis started",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-11 | 11:43:00.136352",
+        "level": "INFO",
+        "message": "Initializing database",
+        "module": "lifespan",
+        "funcName": "init_database"
     }
 ]
