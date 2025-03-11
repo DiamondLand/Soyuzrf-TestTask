@@ -45,4 +45,7 @@ def delete_task_service(db: Session, user: User, task_id: int):
 
     db.delete(task)
     db.commit()
-    return {"message": "Task deleted"}
+    return {
+        "message": "Task deleted",
+        "detail": None
+    }
