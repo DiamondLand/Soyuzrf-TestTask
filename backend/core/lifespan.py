@@ -1,13 +1,11 @@
 from fastapi import FastAPI
 from tortoise import Tortoise
 
-from utils.redis import RedisUtil
 from my_logger import logger
 from core import config
 
 
 async def init_database():
-    await RedisUtil.init_redis()
     logger.info("Redis started")
     logger.info("Initializing database")
     await Tortoise.init(

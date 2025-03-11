@@ -14,4 +14,4 @@ def task_statistics(
     db: Session = Depends(get_db), 
     user: User = Depends(get_current_user)
 ):
-    return get_task_statistics(db=db, user=user)
+    return get_task_statistics(db=db)

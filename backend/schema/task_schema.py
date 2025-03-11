@@ -1,5 +1,5 @@
-from pydantic import BaseModel, Field
-from datetime import datetime
+from pydantic import BaseModel, Field, validator
+from datetime import datetime, timezone
 from typing import Optional
 
 from database.models import TaskStatus, TaskPriority
@@ -11,6 +11,13 @@ class TaskCreate(BaseModel):
     deadline: datetime
     priority: TaskPriority = TaskPriority.medium
 
+    @validator("deadline")
+    def validate_deadline(cls, value):
+        if value.tzinfo is not None:
+            value = value.astimezone(timezone.utc).replace(tzinfo=None)  # Приводим к UTC без таймзоны
+        if value < datetime.now():
+            raise ValueError("Deadline cannot be in the past")
+        return value
 
 class TaskUpdate(BaseModel):
     title: Optional[str]
@@ -19,6 +26,13 @@ class TaskUpdate(BaseModel):
     status: Optional[TaskStatus]
     priority: Optional[TaskPriority]
 
+    @validator("deadline")
+    def validate_deadline(cls, value):
+        if value.tzinfo is not None:
+            value = value.astimezone(timezone.utc).replace(tzinfo=None)  # Приводим к UTC без таймзоны
+        if value < datetime.now():
+            raise ValueError("Deadline cannot be in the past")
+        return value
 
 class TaskResponse(BaseModel):
     id: int
