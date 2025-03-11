@@ -235,5 +235,146 @@
         "method": "POST",
         "remote_addr": "127.0.0.1",
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:45.222127",
+        "level": "INFO",
+        "message": "[ET] Request: /uptime, Execution Time: 0.001 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/uptime",
+        "execution_time": 0.001,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:52.011417",
+        "level": "INFO",
+        "message": "Server started",
+        "module": "lifespan",
+        "funcName": "lifespan"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:52.012414",
+        "level": "INFO",
+        "message": "Redis started",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:52.012414",
+        "level": "INFO",
+        "message": "Initializing database",
+        "module": "lifespan",
+        "funcName": "init_database"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:52.769142",
+        "level": "INFO",
+        "message": "[ET] Request: /uptime, Execution Time: 0.001 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/uptime",
+        "execution_time": 0.001,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:53.585115",
+        "level": "INFO",
+        "message": "[ET] Request: /uptime, Execution Time: 0.0 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/uptime",
+        "execution_time": 0.003,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:54.199007",
+        "level": "INFO",
+        "message": "[ET] Request: /uptime, Execution Time: 0.001 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/uptime",
+        "execution_time": 0.001,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:54.723141",
+        "level": "INFO",
+        "message": "[ET] Request: /uptime, Execution Time: 0.0 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/uptime",
+        "execution_time": 0.001,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:55.202096",
+        "level": "INFO",
+        "message": "[ET] Request: /uptime, Execution Time: 0.001 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/uptime",
+        "execution_time": 0.001,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:55.643124",
+        "level": "INFO",
+        "message": "[ET] Request: /uptime, Execution Time: 0.0 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/uptime",
+        "execution_time": 0.001,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:56.103753",
+        "level": "INFO",
+        "message": "[ET] Request: /uptime, Execution Time: 0.0 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/uptime",
+        "execution_time": 0.001,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:56.610350",
+        "level": "INFO",
+        "message": "[ET] Request: /uptime, Execution Time: 0.001 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/uptime",
+        "execution_time": 0.0016,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    },
+    {
+        "timestamp": "2025-03-10 | 23:10:57.096903",
+        "level": "INFO",
+        "message": "[ET] Request: /uptime, Execution Time: 0.0 seconds",
+        "module": "middleware",
+        "funcName": "dispatch",
+        "path": "/uptime",
+        "execution_time": 0.001,
+        "method": "GET",
+        "remote_addr": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
     }
 ]

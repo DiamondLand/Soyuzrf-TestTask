@@ -18,3 +18,15 @@ class EmailRegisteredException(BaseHTTPException):
 class CredentialsException(BaseHTTPException):
     def __init__(self):
         super().__init__(status.HTTP_401_UNAUTHORIZED, "Invalid credentials")
+
+class InvalidTokenException(BaseHTTPException):
+    def __init__(self):
+        super().__init__(status.HTTP_401_UNAUTHORIZED, "Invalid token")
+
+class UserNotFoundException(BaseHTTPException):
+    def __init__(self):
+        super().__init__(status.HTTP_401_UNAUTHORIZED, "User not found")
+
+class TaskNotFoundException(BaseHTTPException):
+    def __init__(self):
+        super().__init__(status.HTTP_404_NOT_FOUND, "Task not found")
